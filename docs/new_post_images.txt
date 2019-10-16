@@ -1,0 +1,196 @@
+2019-10-16T18:45:51.787544+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  | %Plug.Conn{
+2019-10-16T18:45:51.787555+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   adapter: {Plug.Cowboy.Conn, :...},
+2019-10-16T18:45:51.787555+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   assigns: %{},
+2019-10-16T18:45:51.787556+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   before_send: [],
+2019-10-16T18:45:51.787556+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   body_params: %{
+2019-10-16T18:45:51.787653+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     "entry" => [
+2019-10-16T18:45:51.787683+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |       %{
+2019-10-16T18:45:51.787684+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "changes" => [
+2019-10-16T18:45:51.787684+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |           %{
+2019-10-16T18:45:51.787685+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             "field" => "posts",
+2019-10-16T18:45:51.787696+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             "value" => %{
+2019-10-16T18:45:51.787696+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "attachments" => %{
+2019-10-16T18:45:51.787697+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                 "data" => [
+2019-10-16T18:45:51.787697+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                   %{
+2019-10-16T18:45:51.787698+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "subattachments" => %{
+2019-10-16T18:45:51.787706+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "data" => [
+2019-10-16T18:45:51.787706+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         %{
+2019-10-16T18:45:51.787706+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "media" => %{
+2019-10-16T18:45:51.787707+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "image" => %{
+2019-10-16T18:45:51.787708+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "height" => 471,
+2019-10-16T18:45:51.787717+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "src" => "https://scontent-prg1-1.xx.fbcdn.net/v/t1.0-9/s720x720/73515819_143515763587336_1597249215841435648_o.jpg?_nc_cat=103&_nc_oc=AQndp9zfRFv7MXqsJCR4UTMxKpK93ZQ4SE2ZEWcFt8MKrpp2RW6iIDoCP-Km9WtyJXg&_nc_ht=scontent-prg1-1.xx&oh=d56444f391af447b7a83262b4304fcdd&oe=5E298782",
+2019-10-16T18:45:51.787718+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "width" => 720
+2019-10-16T18:45:51.787718+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             }
+2019-10-16T18:45:51.787719+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           },
+2019-10-16T18:45:51.787719+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "target" => %{
+2019-10-16T18:45:51.787727+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "id" => "143515760254003",
+2019-10-16T18:45:51.787728+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "url" => "https://my.workplace.com/photo.php?fbid=143515760254003&set=gm.416895542538505&type=3"
+2019-10-16T18:45:51.787733+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           },
+2019-10-16T18:45:51.787733+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "type" => "photo",
+2019-10-16T18:45:51.787734+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "url" => "https://my.workplace.com/photo.php?fbid=143515760254003&set=gm.416895542538505&type=3"
+2019-10-16T18:45:51.787975+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         },
+2019-10-16T18:45:51.787976+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         %{
+2019-10-16T18:45:51.787982+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "media" => %{
+2019-10-16T18:45:51.787982+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "image" => %{
+2019-10-16T18:45:51.787983+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "height" => 630,
+2019-10-16T18:45:51.787994+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "src" => "https://scontent-prg1-1.xx.fbcdn.net/v/t1.0-9/72413418_143515736920672_1478843654754795520_n.jpg?_nc_cat=102&_nc_oc=AQmGdkn5qwgfQbamzodMi-IS2Sqdrws8cU8dvzoZFitG1t2yOqNzIAO5sVcMsYFfDRE&_nc_ht=scontent-prg1-1.xx&oh=704c0077d57629507bf07a75509c90df&oe=5E3096D7",
+2019-10-16T18:45:51.787994+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "width" => 532
+2019-10-16T18:45:51.787995+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             }
+2019-10-16T18:45:51.787995+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           },
+2019-10-16T18:45:51.788137+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "target" => %{
+2019-10-16T18:45:51.788149+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "id" => "143515733587339",
+2019-10-16T18:45:51.788150+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "url" => "https://my.workplace.com/photo.php?fbid=143515733587339&set=gm.416895542538505&type=3"
+2019-10-16T18:45:51.788151+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           },
+2019-10-16T18:45:51.788233+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "type" => "photo",
+2019-10-16T18:45:51.788234+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "url" => "https://my.workplace.com/photo.php?fbid=143515733587339&set=gm.416895542538505&type=3"
+2019-10-16T18:45:51.788245+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         }
+2019-10-16T18:45:51.788488+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       ]
+2019-10-16T18:45:51.788520+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     },
+2019-10-16T18:45:51.788731+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "target" => %{
+2019-10-16T18:45:51.788859+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "id" => "416895542538505",
+2019-10-16T18:45:51.788920+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "url" => "https://my.workplace.com/media/set/?set=pcb.416895542538505&type=1"
+2019-10-16T18:45:51.788929+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     },
+2019-10-16T18:45:51.788961+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "title" => "Photos from Antonin Kral's post",
+2019-10-16T18:45:51.789100+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "type" => "album",
+2019-10-16T18:45:51.789103+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "url" => "https://my.workplace.com/media/set/?set=pcb.416895542538505&type=1"
+2019-10-16T18:45:51.789135+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                   }
+2019-10-16T18:45:51.789188+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                 ]
+2019-10-16T18:45:51.789201+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               },
+2019-10-16T18:45:51.789238+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "community" => %{"id" => "364945614284347"},
+2019-10-16T18:45:51.789262+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "created_time" => "2019-10-16T18:45:48+0000",
+2019-10-16T18:45:51.789347+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "from" => %{"id" => "100037867389999", "name" => "Antonin Kral"},
+2019-10-16T18:45:51.789390+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "message" => "Next one, this time we are logging POSTs as well",
+2019-10-16T18:45:51.789537+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "permalink_url" => "https://my.workplace.com/groups/416891669205559/permalink/416895542538505/",
+2019-10-16T18:45:51.789580+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "post_id" => "416891669205559_416895542538505",
+2019-10-16T18:45:51.789632+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "target_type" => "group",
+2019-10-16T18:45:51.789649+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "type" => "photo",
+2019-10-16T18:45:51.789668+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "verb" => "add"
+2019-10-16T18:45:51.789704+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             }
+2019-10-16T18:45:51.789849+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |           }
+2019-10-16T18:45:51.789911+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         ],
+2019-10-16T18:45:51.789924+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "id" => "416891669205559",
+2019-10-16T18:45:51.789939+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "time" => 1571251551
+2019-10-16T18:45:51.790001+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |       }
+2019-10-16T18:45:51.790002+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     ],
+2019-10-16T18:45:51.790038+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     "object" => "group"
+2019-10-16T18:45:51.790143+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   },
+2019-10-16T18:45:51.790188+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   cookies: %Plug.Conn.Unfetched{aspect: :cookies},
+2019-10-16T18:45:51.790190+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   halted: false,
+2019-10-16T18:45:51.790222+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   host: "workspace2slack-eu.gigalixirapp.com",
+2019-10-16T18:45:51.790316+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   method: "POST",
+2019-10-16T18:45:51.790366+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   owner: #PID<0.1796.0>,
+2019-10-16T18:45:51.790373+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   params: %{
+2019-10-16T18:45:51.790402+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     "entry" => [
+2019-10-16T18:45:51.790454+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |       %{
+2019-10-16T18:45:51.790456+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "changes" => [
+2019-10-16T18:45:51.790590+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |           %{
+2019-10-16T18:45:51.790624+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             "field" => "posts",
+2019-10-16T18:45:51.790668+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             "value" => %{
+2019-10-16T18:45:51.790715+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "attachments" => %{
+2019-10-16T18:45:51.790718+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                 "data" => [
+2019-10-16T18:45:51.790875+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                   %{
+2019-10-16T18:45:51.790943+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "subattachments" => %{
+2019-10-16T18:45:51.791019+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "data" => [
+2019-10-16T18:45:51.791207+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         %{
+2019-10-16T18:45:51.791299+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "media" => %{
+2019-10-16T18:45:51.791315+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "image" => %{
+2019-10-16T18:45:51.791331+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "height" => 471,
+2019-10-16T18:45:51.791373+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "src" => "https://scontent-prg1-1.xx.fbcdn.net/v/t1.0-9/s720x720/73515819_143515763587336_1597249215841435648_o.jpg?_nc_cat=103&_nc_oc=AQndp9zfRFv7MXqsJCR4UTMxKpK93ZQ4SE2ZEWcFt8MKrpp2RW6iIDoCP-Km9WtyJXg&_nc_ht=scontent-prg1-1.xx&oh=d56444f391af447b7a83262b4304fcdd&oe=5E298782",
+2019-10-16T18:45:51.791517+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "width" => 720
+2019-10-16T18:45:51.791576+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             }
+2019-10-16T18:45:51.791592+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           },
+2019-10-16T18:45:51.791607+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "target" => %{
+2019-10-16T18:45:51.791643+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "id" => "143515760254003",
+2019-10-16T18:45:51.791685+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "url" => "https://my.workplace.com/photo.php?fbid=143515760254003&set=gm.416895542538505&type=3"
+2019-10-16T18:45:51.791713+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           },
+2019-10-16T18:45:51.791847+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "type" => "photo",
+2019-10-16T18:45:51.791877+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "url" => "https://my.workplace.com/photo.php?fbid=143515760254003&set=gm.416895542538505&type=3"
+2019-10-16T18:45:51.791907+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         },
+2019-10-16T18:45:51.791955+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         %{
+2019-10-16T18:45:51.792008+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "media" => %{
+2019-10-16T18:45:51.792020+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "image" => %{
+2019-10-16T18:45:51.792149+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "height" => 630,
+2019-10-16T18:45:51.792184+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "src" => "https://scontent-prg1-1.xx.fbcdn.net/v/t1.0-9/72413418_143515736920672_1478843654754795520_n.jpg?_nc_cat=102&_nc_oc=AQmGdkn5qwgfQbamzodMi-IS2Sqdrws8cU8dvzoZFitG1t2yOqNzIAO5sVcMsYFfDRE&_nc_ht=scontent-prg1-1.xx&oh=704c0077d57629507bf07a75509c90df&oe=5E3096D7",
+2019-10-16T18:45:51.792226+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                               "width" => 532
+2019-10-16T18:45:51.792286+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             }
+2019-10-16T18:45:51.792301+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           },
+2019-10-16T18:45:51.792307+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "target" => %{
+2019-10-16T18:45:51.792345+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "id" => "143515733587339",
+2019-10-16T18:45:51.792371+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                             "url" => "https://my.workplace.com/photo.php?fbid=143515733587339&set=gm.416895542538505&type=3"
+2019-10-16T18:45:51.792478+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           },
+2019-10-16T18:45:51.792573+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "type" => "photo",
+2019-10-16T18:45:51.792578+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                           "url" => "https://my.workplace.com/photo.php?fbid=143515733587339&set=gm.416895542538505&type=3"
+2019-10-16T18:45:51.792598+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         }
+2019-10-16T18:45:51.792628+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       ]
+2019-10-16T18:45:51.792658+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     },
+2019-10-16T18:45:51.792759+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "target" => %{
+2019-10-16T18:45:51.792802+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "id" => "416895542538505",
+2019-10-16T18:45:51.792830+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "url" => "https://my.workplace.com/media/set/?set=pcb.416895542538505&type=1"
+2019-10-16T18:45:51.792873+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     },
+2019-10-16T18:45:51.792910+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "title" => "Photos from Antonin Kral's post",
+2019-10-16T18:45:51.792983+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "type" => "album",
+2019-10-16T18:45:51.793015+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "url" => "https://my.workplace.com/media/set/?set=pcb.416895542538505&type=1"
+2019-10-16T18:45:51.793059+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                   }
+2019-10-16T18:45:51.793102+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                 ]
+2019-10-16T18:45:51.793199+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               },
+2019-10-16T18:45:51.793211+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "community" => %{"id" => "364945614284347"},
+2019-10-16T18:45:51.793257+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "created_time" => "2019-10-16T18:45:48+0000",
+2019-10-16T18:45:51.793288+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "from" => %{"id" => "100037867389999", "name" => "Antonin Kral"},
+2019-10-16T18:45:51.793379+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "message" => "Next one, this time we are logging POSTs as well",
+2019-10-16T18:45:51.793381+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "permalink_url" => "https://my.workplace.com/groups/416891669205559/permalink/416895542538505/",
+2019-10-16T18:45:51.793413+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "post_id" => "416891669205559_416895542538505",
+2019-10-16T18:45:51.793459+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "target_type" => "group",
+2019-10-16T18:45:51.793529+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "type" => "photo",
+2019-10-16T18:45:51.793590+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "verb" => "add"
+2019-10-16T18:45:51.793654+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             }
+2019-10-16T18:45:51.793731+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |           }
+2019-10-16T18:45:51.793783+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         ],
+2019-10-16T18:45:51.793878+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "id" => "416891669205559",
+2019-10-16T18:45:51.793881+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "time" => 1571251551
+2019-10-16T18:45:51.793910+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |       }
+2019-10-16T18:45:51.794005+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     ],
+2019-10-16T18:45:51.794026+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     "object" => "group"
+2019-10-16T18:45:51.794068+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   },
+2019-10-16T18:45:51.794095+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   path_info: ["workplace"],
+2019-10-16T18:45:51.794158+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   path_params: %{},
+2019-10-16T18:45:51.794186+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   port: 80,
+2019-10-16T18:45:51.794263+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   private: %{
+2019-10-16T18:45:51.794280+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     plug_route: {"/*_path",
+2019-10-16T18:45:51.794333+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |      #Function<5.80018310/2 in Workplace2slack.Router.do_match/4>}
+2019-10-16T18:45:51.794377+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   },
+2019-10-16T18:45:51.794429+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   query_params: %{},
+2019-10-16T18:45:51.794485+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   query_string: "",
+2019-10-16T18:45:51.794543+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   remote_ip: {10, 8, 3, 5},
+2019-10-16T18:45:51.794571+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   req_cookies: %Plug.Conn.Unfetched{aspect: :cookies},
+2019-10-16T18:45:51.794637+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   req_headers: [
+2019-10-16T18:45:51.794704+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"accept", "*/*"},
+2019-10-16T18:45:51.794840+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"content-length", "1978"},
+2019-10-16T18:45:51.794875+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"content-type", "application/json"},
+2019-10-16T18:45:51.794982+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"host", "workspace2slack-eu.gigalixirapp.com"},
+2019-10-16T18:45:51.795030+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"user-agent", "Webhooks/1.0 (https://fb.me/webhooks)"},
+2019-10-16T18:45:51.795111+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"via", "1.1 google"},
+2019-10-16T18:45:51.795164+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-cloud-trace-context",
+2019-10-16T18:45:51.795250+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |      "d10de58ba301468bd7fbef13360fc0d0/4802582939144282897"},
+2019-10-16T18:45:51.795374+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-forwarded-for", "173.252.95.17"},
+2019-10-16T18:45:51.795488+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-forwarded-host", "workspace2slack-eu.gigalixirapp.com"},
+2019-10-16T18:45:51.795548+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-forwarded-port", "80"},
+2019-10-16T18:45:51.796211+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-forwarded-proto", "https"},
+2019-10-16T18:45:51.796253+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-hub-signature", "sha1=9070cfe053ebef9ee531840dc9a37959d363a50f"},
+2019-10-16T18:45:51.796290+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-original-forwarded-for", "173.252.95.17, 35.241.28.19"},
+2019-10-16T18:45:51.796339+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-original-uri", "/workplace"},
+2019-10-16T18:45:51.796377+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-real-ip", "173.252.95.17"},
+2019-10-16T18:45:51.796406+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-request-id", "c540c19f5ba24855807b52629f401720"},
+2019-10-16T18:45:51.796501+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-scheme", "https"}
+2019-10-16T18:45:51.796519+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   ],
+2019-10-16T18:45:51.796548+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   request_path: "/workplace",
+2019-10-16T18:45:51.796578+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   resp_body: nil,
+2019-10-16T18:45:51.796605+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   resp_cookies: %{},
+2019-10-16T18:45:51.796635+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}],
+2019-10-16T18:45:51.796716+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   scheme: :http,
+2019-10-16T18:45:51.796736+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   script_name: [],
+2019-10-16T18:45:51.796790+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   secret_key_base: nil,
+2019-10-16T18:45:51.796827+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   state: :unset,
+2019-10-16T18:45:51.796856+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   status: nil
+2019-10-16T18:45:51.796884+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  | }
+
+
