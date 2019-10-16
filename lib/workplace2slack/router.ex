@@ -19,6 +19,11 @@ defmodule Workplace2slack.Router do
     end
   end
 
+  post "/workplace" do
+    IO.inspect conn
+    send_resp(conn, 201, "Thank you")
+  end
+
   match _ do
     IO.inspect conn
     send_resp(conn, 404, "not found")
