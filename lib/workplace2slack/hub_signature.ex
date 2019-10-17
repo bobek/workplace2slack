@@ -31,7 +31,7 @@ defmodule Workplace2Slack.HubSignature do
   end
 
   defp get_secret do
-    Application.get_env(:workplace2slack, :fb_app_secret)
+    {:ok, Application.get_env(:workplace2slack, :fb_app_secret)}
   end
 
   defp valid_request?(digest, secret, conn) do
