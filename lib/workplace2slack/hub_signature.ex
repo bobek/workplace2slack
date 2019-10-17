@@ -9,10 +9,9 @@ defmodule Workplace2Slack.HubSignature do
          {:ok} <- valid_request?(digest, secret, conn)
     do
       conn
-    # else
-    #   _ -> conn |> send_resp(401, "Could not Authenticate") |> halt()
+    else
+      _ -> conn |> send_resp(401, "Could not Authenticate") |> halt()
     end
-    conn
   end
 
   defp get_signature_digest(conn) do
@@ -23,13 +22,13 @@ defmodule Workplace2Slack.HubSignature do
   end
 
   defp get_secret do
-    # Application.get_env(:my_app, :github_secret)
-    "blah"
+    Application.get_env(:workplace2slack, :fb_app_secret)
   end
 
   defp valid_request?(digest, secret, conn) do
-    IO.inspect conn
-    hmac = :crypto.hmac(:sha, secret, conn.assigns.raw_body) |> Base.encode16(case: :lower)
+    hmac = :crypto.hmac(:sha, secret, conn.assigns.body_raw) |> Base.encode16(case: :lower)
+    IO.puts("FB signature: #{digest}")
+    IO.puts("Our signature: #{hmac}")
     if Plug.Crypto.secure_compare(digest, hmac), do: {:ok}, else: {:error}
   end
 end
