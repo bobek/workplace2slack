@@ -20,6 +20,14 @@ defmodule Workplace2slack.Router do
   end
 
   post "/workplace" do
+    IO.puts "Received message from FB"
+
+    %{"entry" => [%{"object" => "group", "changes" => [bbk_change|_]}]} = conn.body_params
+    IO.inspect bbk_change
+
+    %{"field" => "posts", "value" => %{"community" => %{"message" => bbk_message}}} = bbk_change
+    IO.inspect bbk_message
+
     with %{"entry" => [%{"object" => "group", "changes" => [change|_]}]} <- conn.body_params,
          %{"field" => "posts", "value" => %{"community" => %{"id" => community_id, "message" => message, "permalink_url" => permalink_url}}} <- change do
 
