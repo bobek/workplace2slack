@@ -20,11 +20,6 @@ defmodule Workplace2slack.Router do
   end
 
   post "/workplace" do
-    IO.inspect conn
-    send_resp(conn, 201, "Thank you")
-  end
-
-  post "/msg" do
     with %{"entry" => [%{"object" => "group", "changes" => [change|_]}]} <- conn.body_params,
          %{"field" => "posts", "value" => %{"community" => %{"id" => community_id, "message" => message, "permalink_url" => permalink_url}}} <- change do
 
