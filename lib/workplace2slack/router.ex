@@ -1,5 +1,6 @@
 defmodule Workplace2Slack.Router do
   use Plug.Router
+  alias Workplace2Slack.Workplace
 
   plug :match
   plug Plug.Parsers, parsers: [:json, :urlencoded], json_decoder: Jason
@@ -19,26 +20,6 @@ defmodule Workplace2Slack.Router do
     end
   end
 
-  def extract_image_url(%{"media" => %{"image" => %{"src" => src}}, "type" => "photo"}), do: [src]
-  def extract_image_url(%{"subattachments" => %{"data" => data}}), do: Enum.flat_map(data, fn x -> extract_image_url(x) end)
-  def extract_image_url(_), do: []
-
-  def truncate(text, opts \\ []) do
-    max_length  = opts[:max_length] || 50
-    omission    = opts[:omission] || "..."
-
-    cond do
-      not String.valid?(text) ->
-        text
-      String.length(text) < max_length ->
-        text
-      true ->
-        length_with_omission = max_length - String.length(omission)
-
-        "#{String.slice(text, 0, length_with_omission)}#{omission}"
-    end
-  end
-
   post "/workplace" do
     IO.puts "Received message from FB"
 
@@ -46,7 +27,7 @@ defmodule Workplace2Slack.Router do
          %{"field" => "posts", "value" => %{"community" => %{"id" => _community_id}, "from" => %{"name" => author}, "message" => message, "permalink_url" => permalink_url}} <- change do
 
       attachment_urls = case change do
-        %{"field" => "posts", "value" => %{ "attachments" => %{"data" => attachments}}} -> Enum.flat_map(attachments, fn x -> extract_image_url(x) end)
+        %{"field" => "posts", "value" => %{ "attachments" => %{"data" => attachments}}} -> Enum.flat_map(attachments, fn x -> Workplace.extract_image_url(x) end)
         _ -> []
       end
       IO.inspect attachment_urls
@@ -73,7 +54,7 @@ defmodule Workplace2Slack.Router do
             type: "section",
             text: %{
               type: "mrkdwn",
-              text: truncate(message, max_length: 1567)
+              text: Workplace.sanitize_message(message)
             },
            } | images ],
       }

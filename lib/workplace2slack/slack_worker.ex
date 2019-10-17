@@ -9,12 +9,7 @@ defmodule Workplace2Slack.SlackWorker do
   end
 
   def send_message(msg, state) do
-    IO.puts "Hello!"
-    IO.inspect msg
-    IO.inspect state
-
     body = Jason.encode!(msg)
-
     IO.inspect body
 
     post_message =
