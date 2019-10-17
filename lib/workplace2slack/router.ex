@@ -3,6 +3,7 @@ defmodule Workplace2Slack.Router do
   alias Workplace2Slack.Workplace
 
   plug :match
+  plug Plug.Logger
   plug Plug.Parsers,
     parsers: [:json, :urlencoded],
     body_reader: {Workplace2Slack.Plug.CacheBodyReader, :read_body, []},
