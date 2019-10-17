@@ -3,7 +3,10 @@ defmodule Workplace2Slack.Router do
   alias Workplace2Slack.Workplace
 
   plug :match
-  plug Plug.Parsers, parsers: [:json, :urlencoded], json_decoder: Jason
+  plug Plug.Parsers,
+    parsers: [:json, :urlencoded],
+    body_reader: {Workplace2Slack.Plug.CacheBodyReader, :read_body, []},
+    json_decoder: Jason
   plug :dispatch
 
   get "/health" do
@@ -11,8 +14,7 @@ defmodule Workplace2Slack.Router do
   end
 
   get "/workplace" do
-    IO.inspect conn.query_params
-    IO.inspect conn.body_params
+    IO.inspect conn
     case conn.query_params["hub.challenge"] do
       nil -> send_resp(conn, 200, "OK")
       challange when challange > 0 -> send_resp(conn, 200, challange)
@@ -23,6 +25,8 @@ defmodule Workplace2Slack.Router do
   post "/workplace" do
     IO.puts "Received message from FB"
     IO.inspect conn
+
+    Workplace2Slack.HubSignature.validate_request!(conn)
 
     with %{"entry" => [%{"changes" => [change|_]}|_], "object" => "group"} <- conn.body_params,
          %{"field" => "posts", "value" => %{"community" => %{"id" => _community_id}, "from" => %{"name" => author}, "message" => message, "permalink_url" => permalink_url}} <- change do
@@ -61,7 +65,7 @@ defmodule Workplace2Slack.Router do
       }
 
       IO.inspect slack_msg
-      {:send_message, [slack_msg]} |> Honeydew.async(:slack)
+      # {:send_message, [slack_msg]} |> Honeydew.async(:slack)
     end
 
     send_resp(conn, 201, "OK")
