@@ -2,8 +2,6 @@ defmodule Workplace2Slack.HubSignature do
   import Plug.Conn
 
   def validate_request!(conn) do
-    IO.inspect conn.assigns[:body_raw]
-
     with {:ok, digest} <- get_signature_digest(conn),
          {:ok, secret} <- get_secret(),
          {:ok} <- valid_request?(digest, secret, conn)
@@ -27,8 +25,6 @@ defmodule Workplace2Slack.HubSignature do
 
   defp valid_request?(digest, secret, conn) do
     hmac = :crypto.hmac(:sha, secret, conn.assigns.body_raw) |> Base.encode16(case: :lower)
-    IO.puts("FB signature: #{digest}")
-    IO.puts("Our signature: #{hmac}")
     if Plug.Crypto.secure_compare(digest, hmac), do: {:ok}, else: {:error}
   end
 end
