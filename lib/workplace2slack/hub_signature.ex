@@ -9,8 +9,7 @@ defmodule Workplace2Slack.HubSignature do
       IO.puts "x-hub-signature is valid"
       conn
     else
-      IO.puts "x-hub-signature is INVALID or missing"
-      conn |> send_resp(401, "Could not Authenticate") |> halt()
+      _ -> conn |> send_resp(401, "Could not Authenticate") |> halt()
     end
   end
 
@@ -27,6 +26,8 @@ defmodule Workplace2Slack.HubSignature do
 
   defp valid_request?(digest, secret, conn) do
     hmac = :crypto.hmac(:sha, secret, conn.assigns.body_raw) |> Base.encode16(case: :lower)
+    IO.puts("FB: #{digest}")
+    IO.puts("OUR: #{hmac}")
     if Plug.Crypto.secure_compare(digest, hmac), do: {:ok}, else: {:error}
   end
 end
