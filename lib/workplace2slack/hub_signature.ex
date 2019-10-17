@@ -4,11 +4,11 @@ defmodule Workplace2Slack.HubSignature do
   def validate_request!(conn) do
     IO.puts("Validate request")
 
-    {:ok, digest} <- get_signature_digest(conn)
-    IO.inspect(digest)
-    {:ok, secret} <- get_secret()
-    IO.inspect(secret)
-    {:ok} <- valid_request?(digest, secret, conn)
+    {:ok, bdigest} = get_signature_digest(conn)
+    IO.inspect(bdigest)
+    {:ok, bsecret} = get_secret()
+    IO.inspect(bsecret)
+    {:ok} = valid_request?(bdigest, bsecret, conn)
 
 
     with {:ok, digest} <- get_signature_digest(conn),
