@@ -1,146 +1,140 @@
-2019-10-16T19:00:38.865598+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  | %Plug.Conn{
-2019-10-16T19:00:38.865609+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   adapter: {Plug.Cowboy.Conn, :...},
-2019-10-16T19:00:38.865610+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   assigns: %{},
-2019-10-16T19:00:38.865611+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   before_send: [],
-2019-10-16T19:00:38.865611+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   body_params: %{
-2019-10-16T19:00:38.865668+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     "entry" => [
-2019-10-16T19:00:38.865669+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |       %{
-2019-10-16T19:00:38.865669+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "changes" => [
-2019-10-16T19:00:38.865670+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |           %{
-2019-10-16T19:00:38.865670+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             "field" => "posts",
-2019-10-16T19:00:38.865686+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             "value" => %{
-2019-10-16T19:00:38.865687+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "attachments" => %{
-2019-10-16T19:00:38.865687+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                 "data" => [
-2019-10-16T19:00:38.865688+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                   %{
-2019-10-16T19:00:38.865689+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "description" => "Post *formatted* with **markdown** and one image. And topics and hashtag. #secrethashtag",
-2019-10-16T19:00:38.865697+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "media" => %{
-2019-10-16T19:00:38.865698+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "image" => %{
-2019-10-16T19:00:38.865698+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         "height" => 630,
-2019-10-16T19:00:38.865700+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         "src" => "https://scontent-prg1-1.xx.fbcdn.net/v/t1.0-9/71785117_143519006920345_1721548300986875904_n.jpg?_nc_cat=108&_nc_oc=AQkPOoOmNIT_uOfLRcGGLUG5vSPWiHGf_sdiZUhWF3jZgyVoUn2eWU__IDMsi-gRYBU&_nc_ht=scontent-prg1-1.xx&oh=fc67f69b82d9c730ef589c461565aa98&oe=5E5E6C7F",
-2019-10-16T19:00:38.865700+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         "width" => 532
-2019-10-16T19:00:38.865708+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       }
-2019-10-16T19:00:38.865708+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     },
-2019-10-16T19:00:38.865708+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "target" => %{
-2019-10-16T19:00:38.865710+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "id" => "143519000253679",
-2019-10-16T19:00:38.865711+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "url" => "https://my.workplace.com/photo.php?fbid=143519000253679&set=gm.416903322537727&type=3"
-2019-10-16T19:00:38.865719+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     },
-2019-10-16T19:00:38.865724+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "type" => "photo",
-2019-10-16T19:00:38.865725+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "url" => "https://my.workplace.com/photo.php?fbid=143519000253679&set=gm.416903322537727&type=3"
-2019-10-16T19:00:38.865725+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                   }
-2019-10-16T19:00:38.865726+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                 ]
-2019-10-16T19:00:38.865733+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               },
-2019-10-16T19:00:38.865800+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "community" => %{"id" => "364945614284347"},
-2019-10-16T19:00:38.865801+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "created_time" => "2019-10-16T19:00:35+0000",
-2019-10-16T19:00:38.865868+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "from" => %{"id" => "100037867389999", "name" => "Antonin Kral"},
-2019-10-16T19:00:38.866655+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "message" => "Post *formatted* with **markdown** and one image. And topics and hashtag. #secrethashtag",
-2019-10-16T19:00:38.866676+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "permalink_url" => "https://my.workplace.com/groups/416891669205559/permalink/416903322537727/",
-2019-10-16T19:00:38.866683+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "post_id" => "416891669205559_416903322537727",
-2019-10-16T19:00:38.866684+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "target_type" => "group",
-2019-10-16T19:00:38.866684+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "type" => "photo",
-2019-10-16T19:00:38.866685+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "verb" => "add"
-2019-10-16T19:00:38.866693+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             }
-2019-10-16T19:00:38.866694+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |           }
-2019-10-16T19:00:38.866694+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         ],
-2019-10-16T19:00:38.866695+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "id" => "416891669205559",
-2019-10-16T19:00:38.866695+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "time" => 1571252438
-2019-10-16T19:00:38.866703+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |       }
-2019-10-16T19:00:38.866703+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     ],
-2019-10-16T19:00:38.866704+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     "object" => "group"
-2019-10-16T19:00:38.866704+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   },
-2019-10-16T19:00:38.866704+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   cookies: %Plug.Conn.Unfetched{aspect: :cookies},
-2019-10-16T19:00:38.866711+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   halted: false,
-2019-10-16T19:00:38.866712+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   host: "workspace2slack-eu.gigalixirapp.com",
-2019-10-16T19:00:38.866713+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   method: "POST",
-2019-10-16T19:00:38.866713+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   owner: #PID<0.2105.0>,
-2019-10-16T19:00:38.866727+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   params: %{
-2019-10-16T19:00:38.866734+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     "entry" => [
-2019-10-16T19:00:38.866735+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |       %{
-2019-10-16T19:00:38.866735+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "changes" => [
-2019-10-16T19:00:38.866738+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |           %{
-2019-10-16T19:00:38.866739+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             "field" => "posts",
-2019-10-16T19:00:38.866749+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             "value" => %{
-2019-10-16T19:00:38.866852+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "attachments" => %{
-2019-10-16T19:00:38.866885+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                 "data" => [
-2019-10-16T19:00:38.866929+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                   %{
-2019-10-16T19:00:38.866960+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "description" => "Post *formatted* with **markdown** and one image. And topics and hashtag. #secrethashtag",
-2019-10-16T19:00:38.867002+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "media" => %{
-2019-10-16T19:00:38.867210+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "image" => %{
-2019-10-16T19:00:38.867233+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         "height" => 630,
-2019-10-16T19:00:38.867369+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         "src" => "https://scontent-prg1-1.xx.fbcdn.net/v/t1.0-9/71785117_143519006920345_1721548300986875904_n.jpg?_nc_cat=108&_nc_oc=AQkPOoOmNIT_uOfLRcGGLUG5vSPWiHGf_sdiZUhWF3jZgyVoUn2eWU__IDMsi-gRYBU&_nc_ht=scontent-prg1-1.xx&oh=fc67f69b82d9c730ef589c461565aa98&oe=5E5E6C7F",
-2019-10-16T19:00:38.867442+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                         "width" => 532
-2019-10-16T19:00:38.867495+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       }
-2019-10-16T19:00:38.867976+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     },
-2019-10-16T19:00:38.868023+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "target" => %{
-2019-10-16T19:00:38.868054+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "id" => "143519000253679",
-2019-10-16T19:00:38.868106+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                       "url" => "https://my.workplace.com/photo.php?fbid=143519000253679&set=gm.416903322537727&type=3"
-2019-10-16T19:00:38.868136+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     },
-2019-10-16T19:00:38.868163+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "type" => "photo",
-2019-10-16T19:00:38.868225+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                     "url" => "https://my.workplace.com/photo.php?fbid=143519000253679&set=gm.416903322537727&type=3"
-2019-10-16T19:00:38.868248+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                   }
-2019-10-16T19:00:38.868278+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |                 ]
-2019-10-16T19:00:38.868398+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               },
-2019-10-16T19:00:38.868403+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "community" => %{"id" => "364945614284347"},
-2019-10-16T19:00:38.868404+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "created_time" => "2019-10-16T19:00:35+0000",
-2019-10-16T19:00:38.868420+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "from" => %{"id" => "100037867389999", "name" => "Antonin Kral"},
-2019-10-16T19:00:38.868458+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "message" => "Post *formatted* with **markdown** and one image. And topics and hashtag. #secrethashtag",
-2019-10-16T19:00:38.868483+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "permalink_url" => "https://my.workplace.com/groups/416891669205559/permalink/416903322537727/",
-2019-10-16T19:00:38.868513+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "post_id" => "416891669205559_416903322537727",
-2019-10-16T19:00:38.868545+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "target_type" => "group",
-2019-10-16T19:00:38.868998+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "type" => "photo",
-2019-10-16T19:00:38.868999+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |               "verb" => "add"
-2019-10-16T19:00:38.869013+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |             }
-2019-10-16T19:00:38.869020+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |           }
-2019-10-16T19:00:38.869020+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         ],
-2019-10-16T19:00:38.869021+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "id" => "416891669205559",
-2019-10-16T19:00:38.869021+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |         "time" => 1571252438
-2019-10-16T19:00:38.869030+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |       }
-2019-10-16T19:00:38.869030+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     ],
-2019-10-16T19:00:38.869031+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     "object" => "group"
-2019-10-16T19:00:38.869031+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   },
-2019-10-16T19:00:38.869031+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   path_info: ["workplace"],
-2019-10-16T19:00:38.869039+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   path_params: %{},
-2019-10-16T19:00:38.869042+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   port: 80,
-2019-10-16T19:00:38.869078+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   private: %{
-2019-10-16T19:00:38.869089+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     plug_route: {"/*_path",
-2019-10-16T19:00:38.869123+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |      #Function<5.80018310/2 in Workplace2slack.Router.do_match/4>}
-2019-10-16T19:00:38.869163+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   },
-2019-10-16T19:00:38.869182+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   query_params: %{},
-2019-10-16T19:00:38.869209+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   query_string: "",
-2019-10-16T19:00:38.869250+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   remote_ip: {10, 8, 2, 7},
-2019-10-16T19:00:38.869268+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   req_cookies: %Plug.Conn.Unfetched{aspect: :cookies},
-2019-10-16T19:00:38.869335+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   req_headers: [
-2019-10-16T19:00:38.869353+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"accept", "*/*"},
-2019-10-16T19:00:38.869378+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"content-length", "1265"},
-2019-10-16T19:00:38.869418+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"content-type", "application/json"},
-2019-10-16T19:00:38.869439+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"host", "workspace2slack-eu.gigalixirapp.com"},
-2019-10-16T19:00:38.869468+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"user-agent", "Webhooks/1.0 (https://fb.me/webhooks)"},
-2019-10-16T19:00:38.869837+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"via", "1.1 google"},
-2019-10-16T19:00:38.869838+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-cloud-trace-context",
-2019-10-16T19:00:38.869838+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |      "9f082a32ddbb3e936b7db13f89651b7f/12891122060589175508"},
-2019-10-16T19:00:38.869839+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-forwarded-for", "173.252.127.34"},
-2019-10-16T19:00:38.869853+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-forwarded-host", "workspace2slack-eu.gigalixirapp.com"},
-2019-10-16T19:00:38.869860+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-forwarded-port", "80"},
-2019-10-16T19:00:38.869860+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-forwarded-proto", "https"},
-2019-10-16T19:00:38.869861+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-hub-signature", "sha1=c1ab295b38b3e3684823db71bce8e3d28cc40671"},
-2019-10-16T19:00:38.869864+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-original-forwarded-for", "173.252.127.34, 35.241.28.19"},
-2019-10-16T19:00:38.869892+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-original-uri", "/workplace"},
-2019-10-16T19:00:38.869926+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-real-ip", "173.252.127.34"},
-2019-10-16T19:00:38.869948+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-request-id", "f6aa2f4dcae08a35b3bdc74f27a48358"},
-2019-10-16T19:00:38.869976+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |     {"x-scheme", "https"}
-2019-10-16T19:00:38.870006+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   ],
-2019-10-16T19:00:38.870057+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   request_path: "/workplace",
-2019-10-16T19:00:38.870090+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   resp_body: nil,
-2019-10-16T19:00:38.870113+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   resp_cookies: %{},
-2019-10-16T19:00:38.870141+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}],
-2019-10-16T19:00:38.870173+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   scheme: :http,
-2019-10-16T19:00:38.870195+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   script_name: [],
-2019-10-16T19:00:38.870258+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   secret_key_base: nil,
-2019-10-16T19:00:38.870274+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   state: :unset,
-2019-10-16T19:00:38.870372+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  |   status: nil
-2019-10-16T19:00:38.870373+00:00 workspace2slack-eu[workspace2slack-eu-64f4c6c75f-kndh2]: web.1  | }
-
-
-
-
-
-
+%Plug.Conn{
+  adapter: {Plug.Cowboy.Conn, :...},
+  assigns: %{},
+  before_send: [],
+  body_params: %{
+    "entry" => [
+      %{
+        "changes" => [
+          %{
+            "field" => "posts",
+            "value" => %{
+              "attachments" => %{
+                "data" => [
+                  %{
+                    "description" => "Post *formatted* with **markdown** and one image. And topics and hashtag. #secrethashtag",
+                    "media" => %{
+                      "image" => %{
+                        "height" => 630,
+                        "src" => "https://scontent-prg1-1.xx.fbcdn.net/v/t1.0-9/71785117_143519006920345_1721548300986875904_n.jpg?_nc_cat=108&_nc_oc=AQkPOoOmNIT_uOfLRcGGLUG5vSPWiHGf_sdiZUhWF3jZgyVoUn2eWU__IDMsi-gRYBU&_nc_ht=scontent-prg1-1.xx&oh=fc67f69b82d9c730ef589c461565aa98&oe=5E5E6C7F",
+                        "width" => 532
+                      }
+                    },
+                    "target" => %{
+                      "id" => "143519000253679",
+                      "url" => "https://my.workplace.com/photo.php?fbid=143519000253679&set=gm.416903322537727&type=3"
+                    },
+                    "type" => "photo",
+                    "url" => "https://my.workplace.com/photo.php?fbid=143519000253679&set=gm.416903322537727&type=3"
+                  }
+                ]
+              },
+              "community" => %{"id" => "364945614284347"},
+              "created_time" => "2019-10-16T19:00:35+0000",
+              "from" => %{"id" => "100037867389999", "name" => "Antonin Kral"},
+              "message" => "Post *formatted* with **markdown** and one image. And topics and hashtag. #secrethashtag",
+              "permalink_url" => "https://my.workplace.com/groups/416891669205559/permalink/416903322537727/",
+              "post_id" => "416891669205559_416903322537727",
+              "target_type" => "group",
+              "type" => "photo",
+              "verb" => "add"
+            }
+          }
+        ],
+        "id" => "416891669205559",
+        "time" => 1571252438
+      }
+    ],
+    "object" => "group"
+  },
+  cookies: %Plug.Conn.Unfetched{aspect: :cookies},
+  halted: false,
+  host: "workspace2slack-eu.gigalixirapp.com",
+  method: "POST",
+  owner: #PID<0.2105.0>,
+  params: %{
+    "entry" => [
+      %{
+        "changes" => [
+          %{
+            "field" => "posts",
+            "value" => %{
+              "attachments" => %{
+                "data" => [
+                  %{
+                    "description" => "Post *formatted* with **markdown** and one image. And topics and hashtag. #secrethashtag",
+                    "media" => %{
+                      "image" => %{
+                        "height" => 630,
+                        "src" => "https://scontent-prg1-1.xx.fbcdn.net/v/t1.0-9/71785117_143519006920345_1721548300986875904_n.jpg?_nc_cat=108&_nc_oc=AQkPOoOmNIT_uOfLRcGGLUG5vSPWiHGf_sdiZUhWF3jZgyVoUn2eWU__IDMsi-gRYBU&_nc_ht=scontent-prg1-1.xx&oh=fc67f69b82d9c730ef589c461565aa98&oe=5E5E6C7F",
+                        "width" => 532
+                      }
+                    },
+                    "target" => %{
+                      "id" => "143519000253679",
+                      "url" => "https://my.workplace.com/photo.php?fbid=143519000253679&set=gm.416903322537727&type=3"
+                    },
+                    "type" => "photo",
+                    "url" => "https://my.workplace.com/photo.php?fbid=143519000253679&set=gm.416903322537727&type=3"
+                  }
+                ]
+              },
+              "community" => %{"id" => "364945614284347"},
+              "created_time" => "2019-10-16T19:00:35+0000",
+              "from" => %{"id" => "100037867389999", "name" => "Antonin Kral"},
+              "message" => "Post *formatted* with **markdown** and one image. And topics and hashtag. #secrethashtag",
+              "permalink_url" => "https://my.workplace.com/groups/416891669205559/permalink/416903322537727/",
+              "post_id" => "416891669205559_416903322537727",
+              "target_type" => "group",
+              "type" => "photo",
+              "verb" => "add"
+            }
+          }
+        ],
+        "id" => "416891669205559",
+        "time" => 1571252438
+      }
+    ],
+    "object" => "group"
+  },
+  path_info: ["workplace"],
+  path_params: %{},
+  port: 80,
+  private: %{
+    plug_route: {"/*_path",
+     #Function<5.80018310/2 in Workplace2slack.Router.do_match/4>}
+  },
+  query_params: %{},
+  query_string: "",
+  remote_ip: {10, 8, 2, 7},
+  req_cookies: %Plug.Conn.Unfetched{aspect: :cookies},
+  req_headers: [
+    {"accept", "*/*"},
+    {"content-length", "1265"},
+    {"content-type", "application/json"},
+    {"host", "workspace2slack-eu.gigalixirapp.com"},
+    {"user-agent", "Webhooks/1.0 (https://fb.me/webhooks)"},
+    {"via", "1.1 google"},
+    {"x-cloud-trace-context",
+     "9f082a32ddbb3e936b7db13f89651b7f/12891122060589175508"},
+    {"x-forwarded-for", "173.252.127.34"},
+    {"x-forwarded-host", "workspace2slack-eu.gigalixirapp.com"},
+    {"x-forwarded-port", "80"},
+    {"x-forwarded-proto", "https"},
+    {"x-hub-signature", "sha1=c1ab295b38b3e3684823db71bce8e3d28cc40671"},
+    {"x-original-forwarded-for", "173.252.127.34, 35.241.28.19"},
+    {"x-original-uri", "/workplace"},
+    {"x-real-ip", "173.252.127.34"},
+    {"x-request-id", "f6aa2f4dcae08a35b3bdc74f27a48358"},
+    {"x-scheme", "https"}
+  ],
+  request_path: "/workplace",
+  resp_body: nil,
+  resp_cookies: %{},
+  resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}],
+  scheme: :http,
+  script_name: [],
+  secret_key_base: nil,
+  state: :unset,
+  status: nil
+}
