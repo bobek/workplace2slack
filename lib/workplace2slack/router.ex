@@ -27,7 +27,7 @@ defmodule Workplace2Slack.Router do
     IO.puts "Received message from FB"
     IO.inspect conn
 
-    Workplace2Slack.HubSignature.validate_request!(conn)
+    # Workplace2Slack.HubSignature.validate_request!(conn)
 
     with %{"entry" => [%{"changes" => [change|_]}|_], "object" => "group"} <- conn.body_params,
          %{"field" => "posts", "value" => %{"community" => %{"id" => _community_id}, "from" => %{"name" => author}, "message" => message, "permalink_url" => permalink_url}} <- change do
@@ -36,8 +36,6 @@ defmodule Workplace2Slack.Router do
         %{"field" => "posts", "value" => %{ "attachments" => %{"data" => attachments}}} -> Enum.flat_map(attachments, fn x -> Workplace.extract_image_url(x) end)
         _ -> []
       end
-      IO.inspect attachment_urls
-
       images = attachment_urls
       |> List.flatten
       |> Enum.map(fn x -> %{type: "image", image_url: x, alt_text: "image"} end)
@@ -65,7 +63,7 @@ defmodule Workplace2Slack.Router do
            } | images ],
       }
 
-      IO.inspect slack_msg
+      # IO.inspect slack_msg
       # {:send_message, [slack_msg]} |> Honeydew.async(:slack)
     end
 
