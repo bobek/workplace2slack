@@ -1,6 +1,7 @@
 import Config
 
 # Configures the endpoint
+# TODO: regenerate all secrets and figure out what to do with them
 config :workplace2slack,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
