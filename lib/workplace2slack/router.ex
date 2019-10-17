@@ -1,6 +1,7 @@
 defmodule Workplace2Slack.Router do
   use Plug.Router
   alias Workplace2Slack.Workplace
+  require Logger
 
   plug :match
   plug Plug.RequestId
@@ -25,9 +26,6 @@ defmodule Workplace2Slack.Router do
   end
 
   post "/workplace" do
-    IO.puts "Received message from FB"
-    # IO.inspect conn
-
     Workplace2Slack.HubSignature.validate_request!(conn)
 
     with %{"entry" => [%{"changes" => [change|_]}|_], "object" => "group"} <- conn.body_params,
@@ -64,8 +62,8 @@ defmodule Workplace2Slack.Router do
            } | images ],
       }
 
-      # IO.inspect slack_msg
-      # {:send_message, [slack_msg]} |> Honeydew.async(:slack)
+      Logger.info("#{permalink_url} by #{author}")
+      {:send_message, [slack_msg, Logger.metadata()[:request_id]]} |> Honeydew.async(:slack)
     end
 
     send_resp(conn, 201, "OK")
