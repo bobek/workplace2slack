@@ -6,9 +6,11 @@ defmodule Workplace2Slack.HubSignature do
          {:ok, secret} <- get_secret(),
          {:ok} <- valid_request?(digest, secret, conn)
     do
+      IO.puts "x-hub-signature is valid"
       conn
     else
-      _ -> conn |> send_resp(401, "Could not Authenticate") |> halt()
+      IO.puts "x-hub-signature is INVALID or missing"
+      conn |> send_resp(401, "Could not Authenticate") |> halt()
     end
   end
 
