@@ -1,4 +1,4 @@
-defmodule Workplace2slack.Router do
+defmodule Workplace2Slack.Router do
   use Plug.Router
 
   plug :match

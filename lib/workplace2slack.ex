@@ -1,6 +1,6 @@
-defmodule Workplace2slack do
+defmodule Workplace2Slack do
   @moduledoc """
-  Documentation for Workplace2slack.
+  Documentation for Workplace2Slack.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Workplace2slack do
 
   ## Examples
 
-      iex> Workplace2slack.hello()
+      iex> Workplace2Slack.hello()
       :world
 
   """

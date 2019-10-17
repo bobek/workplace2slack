@@ -1,4 +1,4 @@
-defmodule Workplace2slack.SlackWorker do
+defmodule Workplace2Slack.SlackWorker do
   @behaviour Honeydew.Worker
 
   def init([token, default_channel]) do

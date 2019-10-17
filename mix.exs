@@ -1,4 +1,4 @@
-defmodule Workplace2slack.MixProject do
+defmodule Workplace2Slack.MixProject do
   use Mix.Project
 
   def project do
@@ -15,7 +15,7 @@ defmodule Workplace2slack.MixProject do
   def application do
     [
       extra_applications: [:logger, :mnesia],
-      mod: {Workplace2slack.Application, []}
+      mod: {Workplace2Slack.Application, []}
     ]
   end
 
