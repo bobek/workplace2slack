@@ -1,1 +1,1 @@
-import Config
+import Mix.Config
