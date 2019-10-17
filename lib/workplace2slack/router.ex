@@ -25,7 +25,7 @@ defmodule Workplace2Slack.Router do
 
   post "/workplace" do
     IO.puts "Received message from FB"
-    IO.inspect conn
+    # IO.inspect conn
 
     Workplace2Slack.HubSignature.validate_request!(conn)
 

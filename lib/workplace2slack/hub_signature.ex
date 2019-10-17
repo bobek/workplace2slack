@@ -2,15 +2,17 @@ defmodule Workplace2Slack.HubSignature do
   import Plug.Conn
 
   def validate_request!(conn) do
+    IO.puts("Validate request")
     with {:ok, digest} <- get_signature_digest(conn),
          {:ok, secret} <- get_secret(),
          {:ok} <- valid_request?(digest, secret, conn)
     do
       IO.puts "x-hub-signature is valid"
       conn
-    else
-      _ -> conn |> send_resp(401, "Could not Authenticate") |> halt()
+    # else
+    #   _ -> conn |> send_resp(401, "Could not Authenticate") |> halt()
     end
+    conn
   end
 
   defp get_signature_digest(conn) do
