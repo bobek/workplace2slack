@@ -66,7 +66,7 @@ defmodule Workplace2Slack.Router do
       }
 
       IO.inspect slack_msg
-      {:send_message, [slack_msg]} |> Honeydew.async(:slack)
+      # {:send_message, [slack_msg]} |> Honeydew.async(:slack)
     end
 
     send_resp(conn, 201, "OK")
