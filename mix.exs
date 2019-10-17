@@ -25,6 +25,7 @@ defmodule Workplace2slack.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:jason, "~> 1.1"},
       {:httpoison, "~> 1.6"},
+      {:honeydew, "~> 1.4"},
     ]
   end
 end

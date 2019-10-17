@@ -12,6 +12,9 @@ defmodule Workplace2slack.Application do
       {Plug.Cowboy, scheme: :http, plug: Workplace2slack.Router, options: [port: 4000]},
     ]
 
+    :ok = Honeydew.start_queue(:slack)
+    :ok = Honeydew.start_workers(:slack, {Workplace2slack.SlackWorker, [Application.get_env(:workplace2slack, :slack_token, ""), "CP3C0HB26"]})
+
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: Workplace2slack.Supervisor]

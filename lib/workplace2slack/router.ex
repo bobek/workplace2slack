@@ -24,6 +24,37 @@ defmodule Workplace2slack.Router do
     send_resp(conn, 201, "Thank you")
   end
 
+  post "/msg" do
+    with %{"entry" => [%{"object" => "group", "changes" => [change|_]}]} <- conn.body_params,
+         %{"field" => "posts", "value" => %{"community" => %{"id" => community_id, "message" => message, "permalink_url" => permalink_url}}} <- change do
+
+      IO.inspect community_id
+      IO.inspect permalink_url
+      IO.inspect message
+
+      slack_msg =
+      %{
+        as_user: false,
+        channel: "CP3C0HB26",
+        link_names: true,
+        parse: "full",
+        blocks: [
+          %{
+              type: "section",
+              text: %{
+              type: "mrkdwn",
+              text: message,
+              },
+          },
+        ],
+      }
+
+      {:send_message, [slack_msg]} |> Honeydew.async(:slack)
+    end
+
+    send_resp(conn, 201, "OK")
+  end
+
   match _ do
     IO.inspect conn
     send_resp(conn, 404, "not found")
