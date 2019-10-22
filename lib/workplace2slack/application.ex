@@ -9,7 +9,7 @@ defmodule Workplace2Slack.Application do
     children = [
       # Starts a worker by calling: Workplace2Slack.Worker.start_link(arg)
       # {Workplace2Slack.Worker, arg}
-      {Plug.Cowboy, scheme: :http, plug: Workplace2Slack.Router, options: [port: 4000]},
+      {Plug.Cowboy, scheme: :http, plug: Workplace2Slack.Router, options: [port: Application.get_env(:workplace2slack, :port, 4000)]},
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
