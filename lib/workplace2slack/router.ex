@@ -17,7 +17,6 @@ defmodule Workplace2Slack.Router do
   end
 
   get "/workplace" do
-    IO.inspect conn
     case conn.query_params["hub.challenge"] do
       nil -> send_resp(conn, 200, "OK")
       challange when challange > 0 -> send_resp(conn, 200, challange)
@@ -70,7 +69,6 @@ defmodule Workplace2Slack.Router do
   end
 
   match _ do
-    IO.inspect conn
     send_resp(conn, 404, "not found")
   end
 end

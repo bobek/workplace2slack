@@ -13,7 +13,6 @@ defmodule Workplace2Slack.SlackWorker do
     Logger.metadata(request_id: request_id)
 
     body = Jason.encode!(msg)
-    # IO.inspect body
 
     post_message =
     with url <- Application.get_env(:slack, :url, "https://slack.com") <> "/api/chat.postMessage",
@@ -21,7 +20,6 @@ defmodule Workplace2Slack.SlackWorker do
       HTTPoison.post(url, body, headers)
     end
 
-    # IO.inspect post_message
     Logger.info("sent to Slack")
   end
 end
