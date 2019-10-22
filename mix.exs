@@ -26,6 +26,7 @@ defmodule Workplace2Slack.MixProject do
       {:jason, "~> 1.1"},
       {:httpoison, "~> 1.6"},
       {:honeydew, "~> 1.4"},
+      {:observer_cli, "~> 1.5"},
     ]
   end
 end
