@@ -18,7 +18,7 @@ defmodule Workplace2Slack.Application do
     {:ok, supervisor} = Supervisor.start_link(children, opts)
 
     :ok = Honeydew.start_queue(:slack)
-    :ok = Honeydew.start_workers(:slack, {Workplace2Slack.SlackWorker, [Application.get_env(:workplace2slack, :slack_token, ""), "CP3C0HB26"]})
+    :ok = Honeydew.start_workers(:slack, {Workplace2Slack.SlackWorker, [Application.get_env(:workplace2slack, :slack_token, "")]})
 
     {:ok, supervisor}
   end

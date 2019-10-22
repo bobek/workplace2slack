@@ -2,10 +2,9 @@ defmodule Workplace2Slack.SlackWorker do
   @behaviour Honeydew.Worker
   require Logger
 
-  def init([token, default_channel]) do
+  def init([token]) do
     {:ok, %{
               token: token,
-              default_channel: default_channel,
             }}
   end
 
