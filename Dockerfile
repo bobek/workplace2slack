@@ -25,7 +25,7 @@ RUN mix deps.compile
 RUN mix release
 
 ############## Application Stage
-FROM debian:stable AS app
+FROM debian:stable-slim AS app
 
 ENV LANG=C.UTF-8
 
