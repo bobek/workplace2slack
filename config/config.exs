@@ -2,8 +2,8 @@ import Config
 
 # Configures the endpoint
 config :workplace2slack,
-  slack_token: System.fetch_env!("SLACK_TOKEN"),
-  fb_app_secret: System.fetch_env!("FB_APP_SECRET")
+  slack_token: System.get_env("SLACK_TOKEN", "slack_token_not_provided"),
+  fb_app_secret: System.get_env("FB_APP_SECRET", "fb_app_secret_not_provided")
 
 # Configures Elixir's Logger
 config :logger, :console,
