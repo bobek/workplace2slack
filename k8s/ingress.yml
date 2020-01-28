@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: workplace2slack
+  namespace: workplace2slack
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-dns01
+    kubernetes.io/ingress.class: nginx
+spec:
+  tls:
+  - hosts:
+    - workplace2slack.dtone.xyz
+    secretName: tls-workplace2slack
+  rules:
+  - host: workplace2slack.dtone.xyz
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: workplace2slack
+          servicePort: 4000

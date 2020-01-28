@@ -1,6 +1,11 @@
 # The directory Mix will write compiled artifacts to.
 /_build/
-/.elixir_ls/
+
+# Let's ignore all dotfiles except listed ones
+.*
+!/.gitlab-ci.yml
+!/.gitignore
+!/.dockerignore
 
 # If you run "mix test --cover", coverage assets end up here.
 /cover/
@@ -11,9 +16,6 @@
 # Where third-party dependencies like ExDoc output generated docs.
 /doc/
 
-# Ignore .fetch files in case you like to edit your project deps locally.
-/.fetch
-
 # If the VM crashes, it generates a dump, let's ignore it too.
 erl_crash.dump
 
@@ -22,4 +24,3 @@ erl_crash.dump
 
 # Ignore package tarball (built via "mix hex.build").
 workplace2slack-*.tar
-

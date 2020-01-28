@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: workplace2slack
+  name: workplace2slack
+  namespace: workplace2slack
+spec:
+  selector:
+    app: workplace2slack
+  ports:
+  - port: 4000
+    protocol: TCP
+  type: ClusterIP
